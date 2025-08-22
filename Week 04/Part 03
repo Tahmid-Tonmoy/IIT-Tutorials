@@ -1,0 +1,15 @@
+a = 1
+b = 1.5
+print(3 * a == 2 * b)
+print ((a < b) or (b < a))
+print (not (a < b) or not (a < (b - a)))
+print (((a == b) or not (b < a)) and ((a < b) or (b == a + 1)))
+
+print('Ab' == 'ab')
+print('Harry' < 'harry')
+print(not (('B' == 'b') or ("Big" < "big")))
+print(isinstance(32, float))
+print(isinstance(32, int))
+print("yt" in "Python")
+print("knight".startswith('n'))
+
