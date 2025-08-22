@@ -1,0 +1,37 @@
+a = 2
+b = 3
+c = 7
+
+if (a * b) < c:
+    b = a
+else:
+    c = a + b + c
+
+print(a, b, c)
+
+# Assume the response is B
+letter = input("Enter A, B, or C: ")
+letter = letter.upper()
+
+if letter == "A":
+    print("A, my name is Alice.")
+elif letter == "B":
+    print("To be, or not to be.")
+elif letter == "C":
+    print("Oh, say, can you see.")
+else:
+    print("You did not enter a valid letter.")
+
+isvowel = False
+letter = input("Enter a letter: ")
+letter = letter.upper()
+
+if letter in "AEIOU":
+    isvowel = True
+
+if isvowel:
+    print(letter, "is a vowel.")
+elif not (65 <= ord(letter) <= 90):
+    print("You did not enter a letter")
+else:
+    print(letter, "is a consonant.")
